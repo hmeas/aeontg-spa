@@ -1,19 +1,51 @@
-<nav class="overflow-x-scroll overflow-x-visible-ns flex justify-between items-center center bg-white divider-grey relative">
+<nav class="navbar navbar-expand-lg g-py-0">
+	<div class="container g-pos-rel">
+	  <!-- Logo -->
+	  <a href="#" class="js-go-to navbar-brand u-header__logo"
+	     data-type="static">
+	    <img class="u-header__logo-img u-header__logo-img--main g-width-90" src="/img/aeontg-logo.png" alt="Image description">
+	    <img class="u-header__logo-img g-width-90" src="/img/aeontg-logo.png" alt="Image description">
+	  </a>
+	  <!-- End Logo -->
 
-	<!-- Logo -->
-	<a href="/" class="pa3 db mr4 h-100 w3 flex-none">
-		<img src="/img/logo.svg" alt="Kaldi logo" class="br0 db mb0 w-100"/>
-	</a>
+	  <!-- Navigation -->
+	  <div class="collapse navbar-collapse align-items-center flex-sm-row" id="navBar" data-mobile-scroll-hide="true">
+	    <ul id="js-scroll-nav" class="navbar-nav text-uppercase g-letter-spacing-1 g-font-size-12 g-pt-20 g-pt-0--lg ml-auto">
+	      <li class="nav-item g-mr-15--lg g-mb-7 g-mb-0--lg">
+	        <a href="#home-section" class="nav-link p-0">Home <span class="sr-only">(current)</span></a>
+	      </li>
+	      <li class="nav-item g-mx-15--lg g-mb-7 g-mb-0--lg">
+	        <a href="#about-section" class="nav-link p-0">About</a>
+	      </li>
+	      <li class="nav-item g-mx-15--lg g-mb-7 g-mb-0--lg">
+	        <a href="#services-section" class="nav-link p-0">Services</a>
+	      </li>
+	      <li class="nav-item g-mx-15--lg g-mb-7 g-mb-0--lg">
+	        <a href="#news-section" class="nav-link p-0">News</a>
+	      </li>
+	      <li class="nav-item g-mx-15--lg g-mb-7 g-mb-0--lg">
+	        <a href="#portfolio-section" class="nav-link p-0">Portfolio</a>
+	      </li>
+	      <li class="nav-item g-mx-15--lg g-mb-7 g-mb-0--lg">
+	        <a href="#contact-section" class="nav-link p-0">Contact</a>
+	      </li>
+	    </ul>
+	  </div>
+	  <!-- End Navigation -->
 
-	<!-- Primary Nav -->
-	<ul class="flex b grey-3">
-		<li><a href="/products" class="pa3 no-underline db">Products</a></li>
-
-		<li><a href="/values" class="pa3 no-underline db">Values</a></li>
-
-		<li><a href="/post" class="pa3 no-underline db">Blog</a></li>
-
-		<li><a href="/contact" class="pa3 no-underline db">Contact</a></li>
-	</ul>
-
+	  <!-- Responsive Toggle Button -->
+	  <button class="navbar-toggler btn g-line-height-1 g-brd-none g-pa-0 g-pos-abs g-top-3 g-right-0" type="button"
+	          aria-label="Toggle navigation"
+	          aria-expanded="false"
+	          aria-controls="navBar"
+	          data-toggle="collapse"
+	          data-target="#navBar">
+	    <span class="hamburger hamburger--slider">
+	      <span class="hamburger-box">
+	        <span class="hamburger-inner"></span>
+	      </span>
+	    </span>
+	  </button>
+	  <!-- End Responsive Toggle Button -->
+	</div>
 </nav>

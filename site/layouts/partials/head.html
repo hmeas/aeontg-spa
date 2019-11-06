@@ -1,32 +1,47 @@
 <head>
 
-  <title>{{ .Title }} | {{ $.Site.Title }}</title>
+  	<!-- Title -->
+    <title>Consulting | Unify - Responsive Website Template</title>
 
-  {{ $stylesheet := .Site.Data.webpack.main }}
-  {{ with $stylesheet.css }}
-    <link href="{{ relURL . }}" rel="stylesheet">
-  {{ end }}
+    <!-- Required Meta Tags Always Come First -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
 
-	<meta charset="utf-8">
-	<meta http-equiv="x-ua-compatible" content="ie=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
-  <base href="{{ if getenv "CONTEXT" }}{{ cond (eq "production" (getenv "CONTEXT")) (getenv "URL") (getenv "DEPLOY_PRIME_URL") }}{{ else }}{{ $.Site.BaseURL }}{{ end }}">
+    <!-- Favicon -->
+    <link rel="shortcut icon" href="favicon.ico">
 
-	<link href="https://fonts.googleapis.com/css?family=Nunito+Sans:400,700" rel="stylesheet">
+    <!-- Google Fonts -->
+    <link rel="stylesheet" href="//fonts.googleapis.com/css?family=Open+Sans:400,300,600,700|PT+Sans|Merriweather">
 
-	<!-- Favicons -->
-	<link rel="apple-touch-icon" sizes="180x180" href="/img/apple-touch-icon.png">
-	<link rel="icon" type="image/png" href="/img/favicon-32x32.png" sizes="32x32">
-	<link rel="icon" type="image/png" href="/img/favicon-16x16.png" sizes="16x16">
-	<link rel="manifest" href="/manifest.json">
-	<link rel="mask-icon" href="/img/safari-pinned-tab.svg" color="#ff4400">
-	<meta name="theme-color" content="#fff">
+    <!-- CSS Global Compulsory -->
+    <link rel="stylesheet" href="/vendor/bootstrap/bootstrap.min.css">
+    <link rel="stylesheet" href="/vendor/icon-awesome/css/font-awesome.min.css">
+    <link rel="stylesheet" href="/vendor/icon-line-pro/style.css">
 
-	<!-- Open Graph -->
-	<meta property="og:type" content="business.business">
-	<meta property="og:title" content="Kaldi | Great coffee with a conscience">
-	<meta property="og:url" content="/">
-	<meta property="og:image" content="/img/og-image.jpg">
+    <!-- CSS Implementing Plugins -->
+    <link rel="stylesheet" href="/vendor/icon-awesome/css/font-awesome.min.css">
+    <link rel="stylesheet" href="/vendor/icon-hs/style.css">
+    <link rel="stylesheet" href="/vendor/hamburgers/hamburgers.min.css">
+    <link rel="stylesheet" href="/vendor/dzsparallaxer/dzsparallaxer.css">
+    <link rel="stylesheet" href="/vendor/dzsparallaxer/dzsscroller/scroller.css">
+    <link rel="stylesheet" href="/vendor/dzsparallaxer/advancedscroller/plugin.css">
+    <link rel="stylesheet" href="/vendor/slick-carousel/slick/slick.css">
+    <link rel="stylesheet" href="/vendor/cubeportfolio-full/cubeportfolio/css/cubeportfolio.min.css">
+    <link rel="stylesheet" href="/vendor/fancybox/jquery.fancybox.css">
+
+    <!-- CSS Template -->
+    <link rel="stylesheet" href="css/styles.op-consulting.css">
+
+    <!-- Revolution Slider -->
+    <link rel="stylesheet" href="/vendor/revolution-slider/revolution/fonts/pe-icon-7-stroke/css/pe-icon-7-stroke.css">
+    <link rel="stylesheet" href="/vendor/revolution-slider/revolution/css/settings.css">
+    <link rel="stylesheet" href="/vendor/revolution-slider/revolution/css/layers.css">
+    <link rel="stylesheet" href="/vendor/revolution-slider/revolution/css/navigation.css">
+    <link rel="stylesheet" href="/vendor/revolution-slider/revolution-addons/typewriter/css/typewriter.css">
+
+    <!-- CSS Customization -->
+    <link rel="stylesheet" href="/css/custom.css">
 
   {{ if .IsHome }}
     <script src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>
