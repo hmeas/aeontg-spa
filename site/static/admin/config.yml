@@ -15,7 +15,6 @@ collections: # A list of collections the CMS should be able to edit
       - {label: "Card Image", name: "card_image", widget: "image", allow_multiple: false}
       - {label: "Header", name: "header", widget: "string"}
       - {label: "Subheader", name: "subheader", widget: "string"}
-      - {label: "Subheader", name: "subheader", widget: "string"}
       - label: "Gallery"
         name: "gallery_images"
         widget: "list"
