@@ -6,6 +6,31 @@ public_folder: "img"
 
 collections: # A list of collections the CMS should be able to edit
 
+  - name: "landing_page"
+    label: "Landing Page Elements"
+    folder: "site/content/landing-page"
+    create: true
+    fields:
+      - {label: Title, name: title, widget: string}
+      - label: "About Us"
+        name: "about_us"
+        widget: "object"
+        allow_add: false
+        fields:
+          - {label: Header, name: header, widget: string}
+          - {label: Body, name: body, widget: string}
+      - label: "About Us Steps"
+        name: "about_us_steps"
+        widget: "object"
+        allow_add: false
+        fields:
+          - {label: "Step Number", name: step_number, widget: string}
+          - {label: Header, name: header, widget: string}
+          - {label: Body, name: body, widget: string}
+          - {label: "Fonticon Class", name: fonticon_class, widget: string}
+      - {label: "Image Below Steps", name: "image_below_steps", widget: "image"}
+      - {label: "Image Caption", name: image_caption, widget: string}
+
   - name: "portfolio_card"
     label: "Portfolio Card"
     folder: "site/content/portfolio-card"
