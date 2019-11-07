@@ -19,6 +19,14 @@ collections: # A list of collections the CMS should be able to edit
         name: "gallery_images"
         widget: "list"
         field: {label: Image, name: image, widget: image}
+      - label: "Category"
+        name: "category"
+        widget: "list"
+        allow_add: false
+        field: 
+          - {label: "Design", name: "design", widget: "boolean", default: false}
+          - {label: "Development", name: "development", widget: "boolean", default: false}
+          - {label: "Integration", name: "integration", widget: "boolean", default: false}
 
   - name: "post" # Used in routes, ie.: /admin/collections/:slug/edit
     label: "Post" # Used in the UI, ie.: "New Post"
