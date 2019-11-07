@@ -23,7 +23,7 @@ collections: # A list of collections the CMS should be able to edit
         name: "category"
         widget: "list"
         allow_add: false
-        field: 
+        fields: 
           - {label: "Design", name: "design", widget: "boolean", default: false}
           - {label: "Development", name: "development", widget: "boolean", default: false}
           - {label: "Integration", name: "integration", widget: "boolean", default: false}
