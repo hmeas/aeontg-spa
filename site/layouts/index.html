@@ -560,11 +560,11 @@
             </div>
             <!-- End Heading -->
 
-            <div>
+            <!--<div>
             	{{range (where .Site.AllPages "Section" "portfolio-card")}}
             		<pre>{{ .Params | jsonify}}</pre>
             	{{end}}
-            </div>
+            </div>-->
 
             <!-- Cube Portfolio Blocks - Filter -->
             <ul id="filterControls" class="d-block list-inline text-center g-mb-50">
@@ -611,8 +611,8 @@
 	                        </div>
 	                    </div>
 	                    <div class="text-center g-pa-25 mb-1">
-	                        <h3 class="h5 g-font-weight-600 mb-1">Branding work</h3>
-	                        <p class="mb-0">Identity, Design</p>
+	                        <h3 class="h5 g-font-weight-600 mb-1">{{ .Params.header }}</h3>
+	                        <p class="mb-0">{{ .Params.subheader }}</p>
 	                    </div>
 	                </div>
 	                <!-- End Cube Portfolio Blocks - Item -->
