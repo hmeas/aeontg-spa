@@ -24,10 +24,33 @@ collections: # A list of collections the CMS should be able to edit
         widget: "object"
         allow_add: false
         fields:
-          - {label: "Step Number", name: step_number, widget: string}
-          - {label: Header, name: header, widget: string}
-          - {label: Body, name: body, widget: string}
-          - {label: "Fonticon Class", name: fonticon_class, widget: string}
+          - label: "Steps Column 1"
+            name: "steps_column_1"
+            widget: "object"
+            allow_add: false
+            fields: 
+              - {label: "Step Number", name: step_number, widget: string}
+              - {label: Header, name: header, widget: string}
+              - {label: Body, name: body, widget: string}
+              - {label: "Fonticon Class", name: fonticon_class, widget: string}
+          - label: "Steps Column 2"
+            name: "steps_column_2"
+            widget: "object"
+            allow_add: false
+            fields: 
+              - {label: "Step Number", name: step_number, widget: string}
+              - {label: Header, name: header, widget: string}
+              - {label: Body, name: body, widget: string}
+              - {label: "Fonticon Class", name: fonticon_class, widget: string}
+          - label: "Steps Column 3"
+            name: "steps_column_3"
+            widget: "object"
+            allow_add: false
+            fields: 
+              - {label: "Step Number", name: step_number, widget: string}
+              - {label: Header, name: header, widget: string}
+              - {label: Body, name: body, widget: string}
+              - {label: "Fonticon Class", name: fonticon_class, widget: string}
       - {label: "Image Below Steps", name: "image_below_steps", widget: "image"}
       - {label: "Image Caption", name: image_caption, widget: string}
 
