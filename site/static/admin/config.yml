@@ -21,7 +21,7 @@ collections: # A list of collections the CMS should be able to edit
         field: {label: Image, name: image, widget: image}
       - label: "Category"
         name: "category"
-        widget: "list"
+        widget: "object"
         allow_add: false
         fields: 
           - {label: "Design", name: "design", widget: "boolean", default: false}
